@@ -1,0 +1,30 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#checkbox{
+  display: none;
+}
+
+.menuoption{
+  width: 10vh;
+  height: auto;
+  background-color: black;
+  padding: 7px 2px ;
+  visibility: hidden;
+
+}
+
+#checkbox:checked ~ .menuoption{
+  visibility: visible;
+}
+.option{
+  background-color: aqua;
+  padding: 5px;
+  margin: 1px;
+}
