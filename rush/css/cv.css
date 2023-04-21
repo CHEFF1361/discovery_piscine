@@ -1,0 +1,143 @@
+
+body {
+   overflow: hidden;
+}
+.cv_container {
+    width: 100vw;
+}
+
+.cvInicio_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(165, 181, 207, 0.712);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vw;
+    box-sizing: border-box;
+}
+.cvInicio_container h1 {
+    color: white;
+    font-size: 4vw;
+}
+.cvInicio_container h2 {
+    color: white;
+    font-size: 3vw;
+    margin: 2vw;
+}
+.cv_container p {
+    font-size: 2vw;
+    color: rgb(246, 246, 246);
+    margin: 2vw;
+}
+.cvInicio_container img {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    object-fit: cover;
+    border: solid 2px white;
+    margin: 2vw;
+    box-shadow: 1px 1px 10px 5px rgba(128, 128, 128, 0.458);
+}
+.cvInicio_cv {
+    background-color: rgba(111, 143, 181, 0.293);
+    padding: 1vw;
+    border-radius: .5vw;
+    box-shadow: 1px 1px 5px 5px rgba(97, 100, 129, 0.217);
+    border: solid 1px rgb(10, 89, 149);
+    color: rgb(14, 94, 94);
+    margin: 5vw;
+    cursor: pointer;
+}
+
+
+.cvSobreMi_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.986);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vw;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.cvSobreMi_container h1 {
+    color: white;
+    margin: 5vw;
+}
+
+.cvContact_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.986);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vw;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+.cvContact_container_s {
+    width: 50vw;
+    height: 30vw;
+    background-color: rgba(250, 235, 215, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 2px 2px 7px rgb(0, 0, 0);
+    border-radius: 2vw;
+    padding: 1.5vw;
+}
+
+
+.contact_container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0);
+    width: 50%;
+    height: 100%;
+    border-radius: 1vw;
+    box-shadow: inset 1px 1px 20px rgb(0, 0, 0);
+    padding: 2vw;
+    box-sizing: border-box;
+}
+.contact_container h1 {
+    color: white;
+    text-shadow: 1px 1px 7px black;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    
+}
+
+.msg_container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.msg_container input {
+    width: 70%;
+    padding: 1vw;
+    border-radius: .5vw;
+    box-shadow: 1px 1px 7px black;
+    border: 0;
+    color: black;
+    font-size: 1vw;
+    background-color: gainsboro;
+}
+.msg_container textarea {
+    height: 7vw;
+    width: 70%;
+    padding: 1vw;
+    border-radius: .5vw;
+    box-shadow: 1px 1px 7px black;
+    border: 0;
+    color: black;
+    font-size: 1vw;
+    background-color: gainsboro;
+}

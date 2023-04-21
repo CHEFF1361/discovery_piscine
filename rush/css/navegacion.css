@@ -1,0 +1,32 @@
+
+.navegacion_container {
+    width: 100%;
+    height: 5vw;
+    background-color: rgba(0, 255, 255, 0);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.navegacion_container span {
+    font-size: 3vw;
+    background-color: rgb(211, 207, 217);
+    padding: 1vw;
+    border-radius: 5vw;
+    color: gray;
+    transition: all 0.5s;
+    box-shadow: 1.5px 1.5px 5px rgb(9, 9, 9);
+    cursor: pointer;
+    margin: 2vw;
+}
+.navegacion_container span:hover {
+    font-size: 4vw;
+    background-color: rgba(238, 238, 238, 0.165);
+    padding: 1vw;
+    border-radius: 5vw;
+    color: rgb(165, 165, 165);
+    box-shadow: 2px 2px 7px rgb(74, 74, 74);
+}

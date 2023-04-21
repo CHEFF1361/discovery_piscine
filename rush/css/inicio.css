@@ -1,0 +1,45 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+
+*{margin: 0;padding: 0;font-family: 'PT Sans', sans-serif;}
+
+.inicio_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(224, 89, 89, 0.266);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.links_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inicio_container_image {
+    background-image: url(../images/container.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.links_container input {
+    width: 15vw;
+   
+    margin: 1vw;
+    background-color: rgba(65, 97, 125, 0.364);
+    border: solid 0.5px gray;
+    border-radius: .2vw;
+    color: white;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+.inicio_titulo {
+    color: white;
+    font-size: 5vw;
+    margin: 5vw;
+    width: 100%;
+    padding: 1vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.287);
+}
