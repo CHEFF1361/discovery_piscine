@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42</title>
+</head>
+<body>
+   
+    <form action="" method="get">
+        <input type="text" id="n1">
+        <select  id="select">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text"  id="n2">
+        <input type="submit" value="Try me!" id="submit">
+    </form>
+
+    <script>
+        let submit = document.getElementById("submit");
+        let select = document.getElementById("select");
+        let n1 = document.getElementById("n1");
+        let n2 = document.getElementById("n2");
+
+        n1.addEventListener("keyup",()=> {
+            let value = parseInt(n1.value.charAt(n1.value.length-1));
+            if(!value && n1.value.charAt(n1.value.length-1) !== "0") {
+                alert("Error :(");
+                console.log("Error :(");
+                n1.value = n1.value.slice(0,n1.value.length-1);
+            }
+            
+        })
+        n2.addEventListener("keyup",()=> {
+            let value = parseInt(n2.value.charAt(n2.value.length-1));
+            if(!value && n2.value.charAt(n2.value.length-1) !== "0") {
+                alert("Error :(");
+                console.log("Error :(");
+                n2.value = n2.value.slice(0,n2.value.length-1);
+            }
+        })
+        
+        submit.addEventListener("click",()=> {
+            let r = eval(n1.value+select.value+n2.value);
+            if(select.value !== "/" && select.value !== "%") {
+                alert(r);
+                console.log(r);
+            }else {
+                if(n1.value !== "0" && n2.value !== "0") {
+                    alert(r);
+                    console.log(r);
+                }else {
+                    alert("It’s over 9000!");
+                    console.log("It’s over 9000!");
+                }
+            }
+
+          
+        })
+        
+        setInterval(()=> {
+            alert("Please, useme...");
+        },30000);
+        
+    </script>
+</body>
+</html>
